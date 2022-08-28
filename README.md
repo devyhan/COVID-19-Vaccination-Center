@@ -6,14 +6,12 @@
     
   ## Libraries
 
-    | Name | Description |
-    |:---:|:---:|
-    | SnapKit | Auto Layout을 쉽게 만듭니다. |
-    | RxSwift | 관찰 가능한 시퀀스를 사용하여 비동기 및 이벤트 기반 프로그램을 구성하기 위한 라이브러리입니다. |
-    | RxCocoa | Cocoa Framework에 Rx기능을 합친 RxSwift 래퍼 입니다. |
-    | RxCoreLocation | Core Location에 Rx기능을 합친 RxSwift 래퍼 입니다. |
-    | RxCoreLocation | Core Location에 Rx기능을 합친 RxSwift 래퍼 입니다. |
-    | RxMKMapView | MapKit에 Rx기능을 합친 RxSwift 래퍼 입니다. |
+    - SnapKit: Auto Layout을 쉽게 만듭니다. 
+    - RxSwift: 관찰 가능한 시퀀스를 사용하여 비동기 및 이벤트 기반 프로그램을 구성하기 위한 라이브러리입니다.
+    - RxCocoa: Cocoa Framework에 Rx기능을 합친 RxSwift 래퍼 입니다. 
+    - RxCoreLocation: Core Location에 Rx기능을 합친 RxSwift 래퍼 입니다. 
+    - RxCoreLocation: Core Location에 Rx기능을 합친 RxSwift 래퍼 입니다. 
+    - RxMKMapView: MapKit에 Rx기능을 합친 RxSwift 래퍼 입니다. 
  
   ## Project
   
@@ -34,6 +32,7 @@
 
   ## Directory Tree
 
+```
 COVID-19-vaccination-center
 ├── App
 │   └── Assets
@@ -102,3 +101,4 @@ COVID-19-vaccination-center
 │       └── VaccinationCenterVC.swift
 └── ViewModel
     └── VaccinationCenterVM.swift
+```
