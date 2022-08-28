@@ -7,23 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719A1DC5389658306379A4E9 /* Pods_COVID_19_vaccination_center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */; };
 		7EAF21BD28B5DD4200E6D93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21BC28B5DD4200E6D93B /* AppDelegate.swift */; };
-		7EAF21BF28B5DD4200E6D93B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21BE28B5DD4200E6D93B /* SceneDelegate.swift */; };
-		7EAF21C128B5DD4200E6D93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21C028B5DD4200E6D93B /* ViewController.swift */; };
-		7EAF21C428B5DD4200E6D93B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C228B5DD4200E6D93B /* Main.storyboard */; };
+		7EAF21C128B5DD4200E6D93B /* VaccinationCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */; };
 		7EAF21C628B5DD4300E6D93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C528B5DD4300E6D93B /* Assets.xcassets */; };
 		7EAF21C928B5DD4300E6D93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */; };
+		7EB1F0AE28BB61EB005AA6C2 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F0AD28BB61EB005AA6C2 /* Center.swift */; };
+		7ED84F7B28B61D4300FA167A /* CenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F7A28B61D4300FA167A /* CenterCell.swift */; };
+		7ED84F8228B7136900FA167A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F8128B7136900FA167A /* APIClient.swift */; };
+		7ED84F8528B7141100FA167A /* VaccinationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F8428B7141100FA167A /* VaccinationCenter.swift */; };
+		7ED84FAF28B882FE00FA167A /* VaccinationCenterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FAE28B882FE00FA167A /* VaccinationCenterVM.swift */; };
+		7ED84FB428B8FBFC00FA167A /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FB328B8FBFC00FA167A /* Namespace.swift */; };
+		7ED84FB828B8FE3A00FA167A /* CenterListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FB728B8FE3A00FA167A /* CenterListDTO.swift */; };
+		7ED84FBA28B8FF4D00FA167A /* VaccinationCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FB928B8FF4D00FA167A /* VaccinationCenterDetailVC.swift */; };
+		7ED84FBC28B8FF8100FA167A /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FBB28B8FF8100FA167A /* ItemInfoView.swift */; };
+		7ED84FBE28B8FFA500FA167A /* VaccinationCenterMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FBD28B8FFA500FA167A /* VaccinationCenterMapVC.swift */; };
+		7ED84FC628BB52DC00FA167A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FC528BB52DC00FA167A /* RequestBuilder.swift */; };
+		7ED84FC828BB537700FA167A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FC728BB537700FA167A /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID_19_vaccination_center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.release.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.release.xcconfig"; sourceTree = "<group>"; };
 		7EAF21B928B5DD4200E6D93B /* COVID-19-vaccination-center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19-vaccination-center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF21BC28B5DD4200E6D93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EAF21BE28B5DD4200E6D93B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EAF21C028B5DD4200E6D93B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7EAF21C328B5DD4200E6D93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterVC.swift; sourceTree = "<group>"; };
 		7EAF21C528B5DD4300E6D93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EAF21C828B5DD4300E6D93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EAF21CA28B5DD4300E6D93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB1F0AD28BB61EB005AA6C2 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		7ED84F7A28B61D4300FA167A /* CenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCell.swift; sourceTree = "<group>"; };
+		7ED84F8128B7136900FA167A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		7ED84F8428B7141100FA167A /* VaccinationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenter.swift; sourceTree = "<group>"; };
+		7ED84FAE28B882FE00FA167A /* VaccinationCenterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterVM.swift; sourceTree = "<group>"; };
+		7ED84FB328B8FBFC00FA167A /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		7ED84FB728B8FE3A00FA167A /* CenterListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListDTO.swift; sourceTree = "<group>"; };
+		7ED84FB928B8FF4D00FA167A /* VaccinationCenterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterDetailVC.swift; sourceTree = "<group>"; };
+		7ED84FBB28B8FF8100FA167A /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
+		7ED84FBD28B8FFA500FA167A /* VaccinationCenterMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterMapVC.swift; sourceTree = "<group>"; };
+		7ED84FC528BB52DC00FA167A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		7ED84FC728BB537700FA167A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7ED84FC928BB543400FA167A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719A1DC5389658306379A4E9 /* Pods_COVID_19_vaccination_center.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +68,8 @@
 			children = (
 				7EAF21BB28B5DD4200E6D93B /* COVID-19-vaccination-center */,
 				7EAF21BA28B5DD4200E6D93B /* Products */,
+				8B760AD4C18FE64C141773A6 /* Pods */,
+				B43ED782638DA328D7511CD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,171 @@
 		7EAF21BB28B5DD4200E6D93B /* COVID-19-vaccination-center */ = {
 			isa = PBXGroup;
 			children = (
+				7ED84FCA28BB577000FA167A /* App */,
 				7EAF21BC28B5DD4200E6D93B /* AppDelegate.swift */,
-				7EAF21BE28B5DD4200E6D93B /* SceneDelegate.swift */,
-				7EAF21C028B5DD4200E6D93B /* ViewController.swift */,
-				7EAF21C228B5DD4200E6D93B /* Main.storyboard */,
+				7ED84FB228B8FBC400FA167A /* Utils */,
+				7EAF21DA28B5DEDE00E6D93B /* ViewModel */,
+				7EAF21D928B5DEDA00E6D93B /* Model */,
+				7EAF21D828B5DECF00E6D93B /* View */,
+				7ED84FC928BB543400FA167A /* README.md */,
+			);
+			path = "COVID-19-vaccination-center";
+			sourceTree = "<group>";
+		};
+		7EAF21D828B5DECF00E6D93B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FC128B8FFEA00FA167A /* ViewController */,
+				7ED84FC028B8FFE400FA167A /* Cell */,
+				7ED84FBF28B8FFDC00FA167A /* CustomVIew */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EAF21D928B5DEDA00E6D93B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84F6828B5E94000FA167A /* Data */,
+				7ED84F8328B713FA00FA167A /* Domain */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EAF21DA28B5DEDE00E6D93B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FAE28B882FE00FA167A /* VaccinationCenterVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7ED84F6828B5E94000FA167A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FC228BB52AD00FA167A /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7ED84F8328B713FA00FA167A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FB628B8FE2100FA167A /* Usecase */,
+				7ED84FB528B8FE1A00FA167A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7ED84FB228B8FBC400FA167A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FB328B8FBFC00FA167A /* Namespace.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7ED84FB528B8FE1A00FA167A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FB728B8FE3A00FA167A /* CenterListDTO.swift */,
+				7EB1F0AD28BB61EB005AA6C2 /* Center.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7ED84FB628B8FE2100FA167A /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84F8428B7141100FA167A /* VaccinationCenter.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		7ED84FBF28B8FFDC00FA167A /* CustomVIew */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FBB28B8FF8100FA167A /* ItemInfoView.swift */,
+			);
+			path = CustomVIew;
+			sourceTree = "<group>";
+		};
+		7ED84FC028B8FFE400FA167A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84F7A28B61D4300FA167A /* CenterCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7ED84FC128B8FFEA00FA167A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */,
+				7ED84FB928B8FF4D00FA167A /* VaccinationCenterDetailVC.swift */,
+				7ED84FBD28B8FFA500FA167A /* VaccinationCenterMapVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7ED84FC228BB52AD00FA167A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FC428BB52BE00FA167A /* RequestBuilder */,
+				7ED84FC328BB52B800FA167A /* APIClient */,
+				7ED84FC728BB537700FA167A /* HTTPMethod.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7ED84FC328BB52B800FA167A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84F8128B7136900FA167A /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		7ED84FC428BB52BE00FA167A /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FC528BB52DC00FA167A /* RequestBuilder.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		7ED84FCA28BB577000FA167A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7ED84FCB28BB577300FA167A /* Assets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7ED84FCB28BB577300FA167A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				7EAF21C528B5DD4300E6D93B /* Assets.xcassets */,
 				7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */,
 				7EAF21CA28B5DD4300E6D93B /* Info.plist */,
 			);
-			path = "COVID-19-vaccination-center";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8B760AD4C18FE64C141773A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */,
+				299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B43ED782638DA328D7511CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EAF21CD28B5DD4300E6D93B /* Build configuration list for PBXNativeTarget "COVID-19-vaccination-center" */;
 			buildPhases = (
+				D4C23362BB54EE2314A62755 /* [CP] Check Pods Manifest.lock */,
 				7EAF21B528B5DD4200E6D93B /* Sources */,
 				7EAF21B628B5DD4200E6D93B /* Frameworks */,
 				7EAF21B728B5DD4200E6D93B /* Resources */,
+				3F154546E3DDC04BDFC451B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +313,78 @@
 			files = (
 				7EAF21C928B5DD4300E6D93B /* LaunchScreen.storyboard in Resources */,
 				7EAF21C628B5DD4300E6D93B /* Assets.xcassets in Resources */,
-				7EAF21C428B5DD4200E6D93B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F154546E3DDC04BDFC451B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C23362BB54EE2314A62755 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COVID-19-vaccination-center-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7EAF21B528B5DD4200E6D93B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAF21C128B5DD4200E6D93B /* ViewController.swift in Sources */,
+				7EAF21C128B5DD4200E6D93B /* VaccinationCenterVC.swift in Sources */,
+				7ED84F7B28B61D4300FA167A /* CenterCell.swift in Sources */,
+				7EB1F0AE28BB61EB005AA6C2 /* Center.swift in Sources */,
 				7EAF21BD28B5DD4200E6D93B /* AppDelegate.swift in Sources */,
-				7EAF21BF28B5DD4200E6D93B /* SceneDelegate.swift in Sources */,
+				7ED84FC628BB52DC00FA167A /* RequestBuilder.swift in Sources */,
+				7ED84FBE28B8FFA500FA167A /* VaccinationCenterMapVC.swift in Sources */,
+				7ED84FAF28B882FE00FA167A /* VaccinationCenterVM.swift in Sources */,
+				7ED84FBC28B8FF8100FA167A /* ItemInfoView.swift in Sources */,
+				7ED84FB828B8FE3A00FA167A /* CenterListDTO.swift in Sources */,
+				7ED84FB428B8FBFC00FA167A /* Namespace.swift in Sources */,
+				7ED84F8228B7136900FA167A /* APIClient.swift in Sources */,
+				7ED84FC828BB537700FA167A /* HTTPMethod.swift in Sources */,
+				7ED84F8528B7141100FA167A /* VaccinationCenter.swift in Sources */,
+				7ED84FBA28B8FF4D00FA167A /* VaccinationCenterDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7EAF21C228B5DD4200E6D93B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7EAF21C328B5DD4200E6D93B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,16 +512,20 @@
 		};
 		7EAF21CE28B5DD4300E6D93B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CMQV98DW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19-vaccination-center/Info.plist";
+				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,16 +543,20 @@
 		};
 		7EAF21CF28B5DD4300E6D93B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CMQV98DW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19-vaccination-center/Info.plist";
+				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

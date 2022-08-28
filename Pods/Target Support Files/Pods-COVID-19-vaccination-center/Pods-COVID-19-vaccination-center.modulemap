@@ -1,0 +1,6 @@
+framework module Pods_COVID_19_vaccination_center {
+  umbrella header "Pods-COVID-19-vaccination-center-umbrella.h"
+
+  export *
+  module * { export * }
+}
