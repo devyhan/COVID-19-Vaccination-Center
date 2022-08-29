@@ -1,7 +1,7 @@
 # COVID-19 Vaccination Center
   ## Useage
   ```
-  $ pod install
+  $ pod install && xed .
   ```
   Project Root directory에서 pod install 실행 후 Pods.xcodeproj의 의존성이 있는 COVID-19-vaccination-center.xcworkspace를 실행하여 프로젝트를 실행합니다. 
 
