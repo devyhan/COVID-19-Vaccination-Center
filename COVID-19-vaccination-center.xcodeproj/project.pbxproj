@@ -521,7 +521,6 @@
 				DEVELOPMENT_TEAM = 2CMQV98DW6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -552,7 +551,6 @@
 				DEVELOPMENT_TEAM = 2CMQV98DW6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
