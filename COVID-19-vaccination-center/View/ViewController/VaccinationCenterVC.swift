@@ -116,6 +116,7 @@ final class VaccinationCenterVC: UIViewController {
         cellType: CenterCell.self)
       ) { _, item, cell in
         cell.rowItem = item
+        cell.selectionStyle = .none
       }
       .disposed(by: disposeBag)
     
