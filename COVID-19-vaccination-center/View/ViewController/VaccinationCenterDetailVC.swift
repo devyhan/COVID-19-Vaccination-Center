@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class VaccinationCenterDetailVC: UIViewController {
+final class VaccinationCenterDetailVC: UIViewController, UIGestureRecognizerDelegate {
   var center: Center? {
     didSet {
       if let center = center {
@@ -85,6 +85,8 @@ final class VaccinationCenterDetailVC: UIViewController {
     let navigationAppearance = UINavigationBarAppearance()
     navigationAppearance.backgroundColor = .white
     self.navigationController?.navigationBar.scrollEdgeAppearance = navigationAppearance
+    self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+    self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
   }
   
   private func setConstraints() {
