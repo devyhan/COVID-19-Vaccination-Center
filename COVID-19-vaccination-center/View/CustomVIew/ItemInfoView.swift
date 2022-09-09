@@ -27,9 +27,6 @@ class ItemInfoView: UIView {
   private var imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
-    imageView.snp.makeConstraints { make in
-      make.width.height.equalTo(50)
-    }
     return imageView
   }()
   
@@ -42,7 +39,7 @@ class ItemInfoView: UIView {
   private var subTitleLable: UILabel = {
     let label = UILabel()
     label.font = UIFont.systemFont(ofSize: 13, weight: .regular)
-    label.numberOfLines = 0
+    label.numberOfLines = 2
     label.textAlignment = .center
     return label
   }()
@@ -51,27 +48,39 @@ class ItemInfoView: UIView {
     let stackView = UIStackView(arrangedSubviews: [imageView, titleLable, subTitleLable])
     stackView.axis = .vertical
     stackView.alignment = .center
-    stackView.spacing = 10
+    stackView.spacing = 5
     return stackView
   }()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    setSelfAttribute()
+    setConstraints()
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  private func setSelfAttribute() {
     self.backgroundColor = .white
     self.layer.shadowColor = UIColor.gray.cgColor
     self.layer.shadowOpacity = 1.0
     self.layer.shadowOffset = CGSize.zero
     self.layer.shadowRadius = 6
     self.layer.cornerRadius = 10
+  }
+  
+  private func setConstraints() {
     self.addSubview(vStackView)
     
     vStackView.snp.makeConstraints { make in
       make.centerY.equalToSuperview()
       make.horizontalEdges.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10))
     }
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    
+    imageView.snp.makeConstraints { make in
+      make.width.height.equalTo(UIScreen.main.bounds.width / 8)
+    }
   }
 }
