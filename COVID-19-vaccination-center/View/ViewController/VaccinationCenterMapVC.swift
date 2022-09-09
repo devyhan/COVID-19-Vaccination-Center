@@ -99,14 +99,16 @@ final class VaccinationCenterMapVC: UIViewController {
     let userLocationButton = setUserLocationButton.rx.tap
     
     Observable.combineLatest(updateUserLocation, userLocationButton)
-      .bind { userLocation, _ in
+      .bind { [weak self] userLocation, _ in
+        guard let self = self else { return }
         self.mapView.setCenter(userLocation.coordinate, animated: false)
         self.mapView.region.span = span
       }
       .disposed(by: disposeBag)
     
     setVaccinationCenterLocationButton.rx.tap
-      .bind {
+      .bind { [weak self] _ in
+        guard let self = self else { return }
         self.mapView.setCenter(centerCoordinate, animated: false)
         self.mapView.region.span = span
       }

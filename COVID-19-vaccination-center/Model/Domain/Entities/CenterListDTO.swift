@@ -8,27 +8,27 @@
 import Foundation
 
 struct CenterListDTO<T>: Codable where T: Codable {
-  let page: Int //  0,
-  let perPage: Int//  0,
-  let totalCount: Int//  0,
-  let currentCount: Int //  0,
-  let matchCount: Int//  0,
-  let data: Array<T>//  []
+  let page: Int
+  let perPage: Int
+  let totalCount: Int
+  let currentCount: Int
+  let matchCount: Int
+  let data: Array<T>
 }
 
 struct CenterDTO: Codable {
-  let id: Int // 0,
-  let centerName: String // "string",
-  let sido: String // "string",
-  let sigungu: String// "string",
-  let facilityName: String// "string",
-  let zipCode: String// "string",
-  let address: String// "string",
-  let lat: String// "string",
-  let lng: String// "string",
-  let createdAt: String// "string",
-  let updatedAt: String// "string",
-  let centerType: String// "string",
-  let org: String// "string",
-  let phoneNumber: String// "string"
+  let id: Int
+  let centerName: String
+  let sido: String
+  let sigungu: String
+  let facilityName: String
+  let zipCode: String
+  let address: String
+  let lat: String
+  let lng: String
+  let createdAt: String
+  let updatedAt: String
+  let centerType: String
+  let org: String
+  let phoneNumber: String
 }

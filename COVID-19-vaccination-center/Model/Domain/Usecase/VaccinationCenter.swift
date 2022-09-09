@@ -34,8 +34,3 @@ class VaccinationCenterImpl: VaccinationCenter {
       }
   }
 }
-
-
-
-
-
