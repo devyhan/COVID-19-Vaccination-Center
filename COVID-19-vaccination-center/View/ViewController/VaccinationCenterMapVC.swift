@@ -24,7 +24,7 @@ final class VaccinationCenterMapVC: UIViewController {
   
   private let setUserLocationButton: UIButton = {
     let button = UIButton()
-    button.backgroundColor = ColorSet.blue
+    button.backgroundColor = Colors.blue.color
     button.setTitle("현재위치로", for: .normal)
     button.layer.cornerRadius = 5
     return button
@@ -32,7 +32,7 @@ final class VaccinationCenterMapVC: UIViewController {
   
   private let setVaccinationCenterLocationButton: UIButton = {
     let button = UIButton()
-    button.backgroundColor = ColorSet.red
+    button.backgroundColor = Colors.red.color
     button.setTitle("접종센터로", for: .normal)
     button.layer.cornerRadius = 5
     return button

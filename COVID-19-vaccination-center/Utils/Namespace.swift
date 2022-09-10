@@ -7,17 +7,19 @@
 
 import UIKit
 
-enum ColorSet {
-  static let red = UIColor(named: "red")
-  static let blue = UIColor(named: "blue")
-  static let gray = UIColor(named: "gray")
+enum Images: String {
+  case building, chat, hospital, telephone, placeholder
+  case topAlignment = "top-alignment"
+  
+  var image: UIImage {
+    return UIImage(named: self.rawValue) ?? UIImage()
+  }
 }
 
-enum IConSet {
-  static let building = UIImage(named: "building")!
-  static let chat = UIImage(named: "chat")!
-  static let hospital = UIImage(named: "hospital")!
-  static let placeholder = UIImage(named: "placeholder")!
-  static let telephone = UIImage(named: "telephone")!
-  static let topAlignment = UIImage(named: "top-alignment")!
+enum Colors: String {
+  case red, blue, gray
+  
+  var color: UIColor {
+    return UIColor(named: self.rawValue) ?? .clear
+  }
 }

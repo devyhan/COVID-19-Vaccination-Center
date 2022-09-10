@@ -13,11 +13,11 @@ final class VaccinationCenterDetailVC: UIViewController, UIGestureRecognizerDele
   var center: Center? {
     didSet {
       if let center = center {
-        centerView.item = .init(image: IConSet.hospital, title: "센터명", subTitle: center.centerName)
-        facilityView.item = .init(image: IConSet.building, title: "건물명", subTitle: center.facilityName)
-        numberView.item = .init(image: IConSet.telephone, title: "전화번호", subTitle: center.phoneNumber == "" ? "전화번호가 없습니다." : center.phoneNumber)
-        updateAtView.item = .init(image: IConSet.chat, title: "업데이트 시간", subTitle: center.updatedAt)
-        addressView.item = .init(image: IConSet.placeholder, title: "주소", subTitle: center.address)
+        centerView.item = .init(image: Images.hospital.image, title: "센터명", subTitle: center.centerName)
+        facilityView.item = .init(image: Images.building.image, title: "건물명", subTitle: center.facilityName)
+        numberView.item = .init(image: Images.telephone.image, title: "전화번호", subTitle: center.phoneNumber == "" ? "전화번호가 없습니다." : center.phoneNumber)
+        updateAtView.item = .init(image: Images.chat.image, title: "업데이트 시간", subTitle: center.updatedAt)
+        addressView.item = .init(image: Images.placeholder.image, title: "주소", subTitle: center.address)
       }
     }
   }
@@ -73,7 +73,7 @@ final class VaccinationCenterDetailVC: UIViewController, UIGestureRecognizerDele
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.view.backgroundColor = ColorSet.gray
+    self.view.backgroundColor = Colors.gray.color
     
     setNavigation()
     setConstraints()

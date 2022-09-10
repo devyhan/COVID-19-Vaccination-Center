@@ -12,6 +12,7 @@
 		7EAF21C128B5DD4200E6D93B /* VaccinationCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */; };
 		7EAF21C628B5DD4300E6D93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C528B5DD4300E6D93B /* Assets.xcassets */; };
 		7EAF21C928B5DD4300E6D93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */; };
+		7EB0C39D28CC35CC0001BBFA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C39C28CC35CC0001BBFA /* Extension.swift */; };
 		7EB1F0AE28BB61EB005AA6C2 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F0AD28BB61EB005AA6C2 /* Center.swift */; };
 		7ED84F7B28B61D4300FA167A /* CenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F7A28B61D4300FA167A /* CenterCell.swift */; };
 		7ED84F8228B7136900FA167A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F8128B7136900FA167A /* APIClient.swift */; };
@@ -35,6 +36,7 @@
 		7EAF21C528B5DD4300E6D93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EAF21C828B5DD4300E6D93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EAF21CA28B5DD4300E6D93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB0C39C28CC35CC0001BBFA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7EB1F0AD28BB61EB005AA6C2 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		7ED84F7A28B61D4300FA167A /* CenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCell.swift; sourceTree = "<group>"; };
 		7ED84F8128B7136900FA167A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7ED84FB328B8FBFC00FA167A /* Namespace.swift */,
+				7EB0C39C28CC35CC0001BBFA /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,19 +220,19 @@
 		7ED84FCA28BB577000FA167A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				7ED84FCB28BB577300FA167A /* Assets */,
+				7ED84FCB28BB577300FA167A /* Resources */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		7ED84FCB28BB577300FA167A /* Assets */ = {
+		7ED84FCB28BB577300FA167A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				7EAF21C528B5DD4300E6D93B /* Assets.xcassets */,
 				7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */,
 				7EAF21CA28B5DD4300E6D93B /* Info.plist */,
 			);
-			path = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8B760AD4C18FE64C141773A6 /* Pods */ = {
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB0C39D28CC35CC0001BBFA /* Extension.swift in Sources */,
 				7EAF21C128B5DD4200E6D93B /* VaccinationCenterVC.swift in Sources */,
 				7ED84F7B28B61D4300FA167A /* CenterCell.swift in Sources */,
 				7EB1F0AE28BB61EB005AA6C2 /* Center.swift in Sources */,
@@ -516,9 +520,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2CMQV98DW6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
+				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Resources/Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -546,9 +550,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2CMQV98DW6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Assets/Info.plist";
+				INFOPLIST_FILE = "COVID-19-vaccination-center/App/Resources/Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치기반 서비스 이용을 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
