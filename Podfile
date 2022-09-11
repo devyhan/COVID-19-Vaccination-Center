@@ -11,7 +11,6 @@ target 'COVID-19-vaccination-center' do
   pod 'RxCocoa'
   pod 'RxCoreLocation', '~> 1.5.1'
   pod 'RxMKMapView'
-
 end
 
 post_install do |installer|

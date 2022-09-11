@@ -1,4 +1,5 @@
 PODS:
+  - Nimble (10.0.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -10,35 +11,57 @@ PODS:
   - RxMKMapView (6.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxNimble/Core (6.0.0):
+    - Nimble (~> 10.0)
+    - RxSwift (~> 6.0)
+  - RxNimble/RxTest (6.0.0):
+    - RxNimble/Core
+    - RxTest
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - RxTest (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - RxCocoa
   - RxCoreLocation (~> 1.5.1)
   - RxMKMapView
+  - RxNimble/RxTest
   - RxSwift
+  - RxTest
+  - RxViewController
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - Nimble
     - RxCocoa
     - RxCoreLocation
     - RxMKMapView
+    - RxNimble
     - RxRelay
     - RxSwift
+    - RxTest
+    - RxViewController
     - SnapKit
 
 SPEC CHECKSUMS:
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxCoreLocation: a78f4cbf32a4c6c47ecccbe22d41ff93b7e8c099
   RxMKMapView: 9e33a1f1a6bdd96ef4d489d587df40b0b9017c20
+  RxNimble: 04caf11bd7e8f7669d68ef69b8fdfe41552c1ef2
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: d6b345ec95f950347e333615c13478a82be4fe0e
+PODFILE CHECKSUM: 73eb006f58c1eba3fd1b23cf50a253818f274f9d
 
 COCOAPODS: 1.11.3

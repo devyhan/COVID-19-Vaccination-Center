@@ -11,19 +11,27 @@ import RxSwift
 import RxCocoa
 
 final class VaccinationCenterVC: UIViewController {
-  private let viewModel = VaccinationCenterVM()
+  private var viewModel = VaccinationCenterVM()
   private var disposeBag = DisposeBag()
+  
+  private var fetchMoreDatasSubject = PublishSubject<Void>()
+  private lazy var input = VaccinationCenterVM.Input(
+    fetchMoreDatas: self.fetchMoreDatasSubject.asObservable(),
+    refreshControlAction: self.refreshControl.rx.controlEvent(.valueChanged).asObservable()
+  )
+  private lazy var output = self.viewModel.transform(input: input)
+
+  private let refreshControl = UIRefreshControl()
   
   private lazy var tableView: UITableView = {
     let tableView = UITableView(frame: .zero)
     tableView.register(CenterCell.self, forCellReuseIdentifier: CenterCell.identifier)
     tableView.rowHeight = UITableView.automaticDimension
-    tableView.refreshControl = UIRefreshControl()
+    tableView.refreshControl = refreshControl
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.tableHeaderView = UIView()
     tableView.tableFooterView = UIView(frame: .zero)
     tableView.refreshControl?.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
-    tableView.refreshControl?.addTarget(self, action: #selector(refreshControlDidTap), for: .valueChanged)
     return tableView
   }()
   
@@ -90,33 +98,43 @@ final class VaccinationCenterVC: UIViewController {
   }
   
   private func setBindings() {
-    self.viewModel.fetchMoreDatas.onNext(())
-    
-    viewModel.isLoadingSpinnerAvaliable
-      .observe(on: MainScheduler.instance)
-      .subscribe { [weak self] isAvaliable in
-        guard let isAvaliable = isAvaliable.element,
-              let self = self else { return }
-        self.spinner.isHidden = !isAvaliable
-        self.tableView.tableFooterView = isAvaliable ? self.spinner : UIView(frame: .zero)
+    output.vaccinationItems
+      .drive(
+        tableView.rx.items(
+          cellIdentifier: CenterCell.identifier,
+          cellType: CenterCell.self
+        )
+      ) { _, item, cell in
+        cell.rowItem = item
+        cell.selectionStyle = .none
       }
       .disposed(by: disposeBag)
     
-    viewModel.refreshControlCompelted
-      .observe(on: MainScheduler.instance)
-      .subscribe { [weak self] _ in
+    output.refreshControlCompelted
+      .drive { [weak self] _ in
         guard let self = self else { return }
         self.tableView.refreshControl?.endRefreshing()
       }
       .disposed(by: disposeBag)
     
-    viewModel.items
-      .bind(to: tableView.rx.items(
-        cellIdentifier: CenterCell.identifier,
-        cellType: CenterCell.self)
-      ) { _, item, cell in
-        cell.rowItem = item
-        cell.selectionStyle = .none
+    output.isLoadingSpinnerAvaliable
+      .drive { [weak self] isAvaliable in
+        guard let self = self else { return }
+        self.spinner.isHidden = !isAvaliable
+        self.tableView.tableFooterView = isAvaliable ? self.spinner : UIView(frame: .zero)
+      }
+      .disposed(by: disposeBag)
+    
+    tableView.rx.didScroll
+      .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+      .subscribe { [weak self] _ in
+        guard let self = self else { return }
+        let offSetY = self.tableView.contentOffset.y
+        let contentHeight = self.tableView.contentSize.height
+        
+        if offSetY > (contentHeight - self.tableView.frame.size.height - 100) {
+          self.fetchMoreDatasSubject.onNext(())
+        }
       }
       .disposed(by: disposeBag)
     
@@ -130,30 +148,6 @@ final class VaccinationCenterVC: UIViewController {
       })
       .disposed(by: disposeBag)
     
-    tableView.rx.didScroll
-      .debounce(.seconds(1), scheduler: MainScheduler.instance)
-      .subscribe { [weak self] _ in
-        guard let self = self else { return }
-        let offSetY = self.tableView.contentOffset.y
-        let contentHeight = self.tableView.contentSize.height
-        
-        if offSetY > (contentHeight - self.tableView.frame.size.height - 100) {
-          self.viewModel.fetchMoreDatas.onNext(())
-        }
-      }
-      .disposed(by: disposeBag)
-    
-    tableView.rx.didScroll.subscribe { [weak self] _ in
-      guard let self = self else { return }
-      let offSetY = self.tableView.contentOffset.y
-      let contentHeight = self.tableView.contentSize.height
-      
-      if offSetY > (contentHeight - self.tableView.frame.size.height - 100) {
-        self.viewModel.fetchMoreDatas.onNext(())
-      }
-    }
-    .disposed(by: disposeBag)
-    
     floatingButton.rx.tap
       .bind { [weak self] _ in
         guard let self = self else { return }
@@ -161,9 +155,5 @@ final class VaccinationCenterVC: UIViewController {
         self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
       }
       .disposed(by: disposeBag)
-  }
-  
-  @objc func refreshControlDidTap() {
-    viewModel.refreshControlAction.onNext(())
   }
 }
