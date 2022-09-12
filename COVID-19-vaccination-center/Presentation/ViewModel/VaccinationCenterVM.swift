@@ -45,7 +45,6 @@ final class VaccinationCenterVM: ViewModelType {
     input.fetchMoreDatas
       .subscribe { [weak self] _ in
         guard let self = self else { return }
-        print("fetchMoreDatas")
         self.fetchData(
           page: self.page,
           isRefreshControl: false

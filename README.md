@@ -14,6 +14,10 @@
   |RxCocoa|Cocoa Framework에 Rx기능을 합친 RxSwift 래퍼 입니다.|
   |RxCoreLocation|Core Location에 Rx기능을 합친 RxSwift 래퍼 입니다|
   |RxMKMapView|MapKit에 Rx기능을 합친 RxSwift 래퍼 입니다.|
+  |RxTest|RxSwift의 스트림들을 테스트 할 수 있고 가상 시간을 함께 이벤트를 발생시킬 수 있도록 합니다.|
+  |RxNimble/RxTest|Nimble의 expect라는 함수로 명료하게 테스트를 할 수 있도록 합니다.|
+
+  > RxTest, RxNimble은 Project의 Tests target에서만 사용(import) 할 수 있도록 pod file에 명시합니다.
  
   ## Project
 
@@ -92,6 +96,8 @@ COVID-19-vaccination-center
 │       ├── Entities
 │       │   ├── CenterDTO.swift
 │       │   └── CenterListDTO.swift
+│       ├── Mock
+│       │   └── VaccinationCenterMock.swift
 │       └── Translator
 │           └── CenterTranslator.swift
 ├── Domain
@@ -111,12 +117,12 @@ COVID-19-vaccination-center
 │   ├── View
 │   │   ├── Cell
 │   │   │   └── CenterCell.swift
-│   │   ├── CustomVIew
-│   │   │   └── ItemInfoView.swift
-│   │   └── ViewController
-│   │       ├── VaccinationCenterDetailVC.swift
-│   │       ├── VaccinationCenterMapVC.swift
-│   │       └── VaccinationCenterVC.swift
+│   │   └── CustomVIew
+│   │       └── ItemInfoView.swift
+│   ├── ViewController
+│   │   ├── VaccinationCenterDetailVC.swift
+│   │   ├── VaccinationCenterMapVC.swift
+│   │   └── VaccinationCenterVC.swift
 │   └── ViewModel
 │       └── VaccinationCenterVM.swift
 └── Utils

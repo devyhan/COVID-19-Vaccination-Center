@@ -22,9 +22,6 @@ PODS:
   - RxSwift (6.5.0)
   - RxTest (6.5.0):
     - RxSwift (= 6.5.0)
-  - RxViewController (2.0.0):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
@@ -34,7 +31,6 @@ DEPENDENCIES:
   - RxNimble/RxTest
   - RxSwift
   - RxTest
-  - RxViewController
   - SnapKit
 
 SPEC REPOS:
@@ -47,7 +43,6 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxTest
-    - RxViewController
     - SnapKit
 
 SPEC CHECKSUMS:
@@ -59,9 +54,8 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
-  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 73eb006f58c1eba3fd1b23cf50a253818f274f9d
+PODFILE CHECKSUM: b422a2a5afa30afb813ee012cca8eca205f2159d
 
 COCOAPODS: 1.11.3

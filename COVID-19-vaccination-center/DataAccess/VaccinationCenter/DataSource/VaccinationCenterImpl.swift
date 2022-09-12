@@ -5,7 +5,6 @@
 //  Created by YHAN on 2022/09/11.
 //
 
-import Combine
 import RxSwift
 
 final class VaccinationCenterImpl: VaccinationCenter {

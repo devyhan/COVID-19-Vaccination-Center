@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		719A1DC5389658306379A4E9 /* Pods_COVID_19_vaccination_center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */; };
+		17EFA4F1679E438629EB78C0 /* Pods_COVID_19_vaccination_center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C8D2A793D70502B69B99 /* Pods_COVID_19_vaccination_center.framework */; };
 		7EAF21BD28B5DD4200E6D93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21BC28B5DD4200E6D93B /* AppDelegate.swift */; };
 		7EAF21C128B5DD4200E6D93B /* VaccinationCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */; };
 		7EAF21C628B5DD4300E6D93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF21C528B5DD4300E6D93B /* Assets.xcassets */; };
@@ -16,6 +16,8 @@
 		7EB0C3B228CE18DD0001BBFA /* VaccinationCenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C3B128CE18DD0001BBFA /* VaccinationCenterImpl.swift */; };
 		7EB0C3B528CE1B9C0001BBFA /* CenterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C3B428CE1B9C0001BBFA /* CenterDTO.swift */; };
 		7EB0C43928CE1E9B0001BBFA /* CenterTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C43828CE1E9B0001BBFA /* CenterTranslator.swift */; };
+		7EB0C44228CE36060001BBFA /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C44128CE36060001BBFA /* Tests.swift */; };
+		7EB0C44A28CE430E0001BBFA /* VaccinationCenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0C44928CE430E0001BBFA /* VaccinationCenterMock.swift */; };
 		7EB1F0AE28BB61EB005AA6C2 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F0AD28BB61EB005AA6C2 /* Center.swift */; };
 		7ED84F7B28B61D4300FA167A /* CenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F7A28B61D4300FA167A /* CenterCell.swift */; };
 		7ED84F8228B7136900FA167A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84F8128B7136900FA167A /* APIClient.swift */; };
@@ -28,12 +30,22 @@
 		7ED84FBE28B8FFA500FA167A /* VaccinationCenterMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FBD28B8FFA500FA167A /* VaccinationCenterMapVC.swift */; };
 		7ED84FC628BB52DC00FA167A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FC528BB52DC00FA167A /* RequestBuilder.swift */; };
 		7ED84FC828BB537700FA167A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED84FC728BB537700FA167A /* HTTPMethod.swift */; };
+		FB2E016BBB05C58A8B6C2B53 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0AF1C1394D2D69F7E6C84E /* Pods_Tests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7EB0C44328CE36060001BBFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAF21B128B5DD4200E6D93B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAF21B828B5DD4200E6D93B;
+			remoteInfo = "COVID-19-vaccination-center";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID_19_vaccination_center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.release.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.release.xcconfig"; sourceTree = "<group>"; };
-		30E0B66CF7316DDAEF6E884D /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		45E3717FDC48937643DAC7BB /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		77FFB81EA4B861297CF0AC7E /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EAF21B928B5DD4200E6D93B /* COVID-19-vaccination-center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19-vaccination-center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF21BC28B5DD4200E6D93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EAF21C028B5DD4200E6D93B /* VaccinationCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterVC.swift; sourceTree = "<group>"; };
@@ -44,6 +56,9 @@
 		7EB0C3B128CE18DD0001BBFA /* VaccinationCenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterImpl.swift; sourceTree = "<group>"; };
 		7EB0C3B428CE1B9C0001BBFA /* CenterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDTO.swift; sourceTree = "<group>"; };
 		7EB0C43828CE1E9B0001BBFA /* CenterTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTranslator.swift; sourceTree = "<group>"; };
+		7EB0C43F28CE36060001BBFA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB0C44128CE36060001BBFA /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		7EB0C44928CE430E0001BBFA /* VaccinationCenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterMock.swift; sourceTree = "<group>"; };
 		7EB1F0AD28BB61EB005AA6C2 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		7ED84F7A28B61D4300FA167A /* CenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCell.swift; sourceTree = "<group>"; };
 		7ED84F8128B7136900FA167A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -56,9 +71,10 @@
 		7ED84FBD28B8FFA500FA167A /* VaccinationCenterMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterMapVC.swift; sourceTree = "<group>"; };
 		7ED84FC528BB52DC00FA167A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		7ED84FC728BB537700FA167A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		8CEB1AF2192D7E9B02E203DE /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD0498CD66CEDCD6A2FBB95 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.debug.xcconfig"; sourceTree = "<group>"; };
+		8497E6F5CCDEC6BFD72E708F /* Pods-COVID-19-vaccination-center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.release.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.release.xcconfig"; sourceTree = "<group>"; };
+		91DB9C2FD27C24A592922FE3 /* Pods-COVID-19-vaccination-center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19-vaccination-center.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0AF1C1394D2D69F7E6C84E /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA24C8D2A793D70502B69B99 /* Pods_COVID_19_vaccination_center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID_19_vaccination_center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +82,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719A1DC5389658306379A4E9 /* Pods_COVID_19_vaccination_center.framework in Frameworks */,
+				17EFA4F1679E438629EB78C0 /* Pods_COVID_19_vaccination_center.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EB0C43C28CE36060001BBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2E016BBB05C58A8B6C2B53 /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594334CCC0105EEC23C6A913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA24C8D2A793D70502B69B99 /* Pods_COVID_19_vaccination_center.framework */,
+				CB0AF1C1394D2D69F7E6C84E /* Pods_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7EAF21B028B5DD4200E6D93B = {
 			isa = PBXGroup;
 			children = (
 				7EAF21BB28B5DD4200E6D93B /* COVID-19-vaccination-center */,
+				7EB0C44028CE36060001BBFA /* Tests */,
 				7EAF21BA28B5DD4200E6D93B /* Products */,
 				8B760AD4C18FE64C141773A6 /* Pods */,
-				B43ED782638DA328D7511CD5 /* Frameworks */,
+				594334CCC0105EEC23C6A913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				7EAF21B928B5DD4200E6D93B /* COVID-19-vaccination-center.app */,
+				7EB0C43F28CE36060001BBFA /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +142,6 @@
 		7EAF21D828B5DECF00E6D93B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7ED84FC128B8FFEA00FA167A /* ViewController */,
 				7ED84FC028B8FFE400FA167A /* Cell */,
 				7ED84FBF28B8FFDC00FA167A /* CustomVIew */,
 			);
@@ -125,6 +159,7 @@
 		7EB0C3AB28CE17010001BBFA /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7ED84FC128B8FFEA00FA167A /* ViewController */,
 				7EAF21D828B5DECF00E6D93B /* View */,
 				7EAF21DA28B5DEDE00E6D93B /* ViewModel */,
 			);
@@ -159,6 +194,7 @@
 		7EB0C3B028CE18CD0001BBFA /* VaccinationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				7EB0C44828CE43030001BBFA /* Mock */,
 				7ED84FB528B8FE1A00FA167A /* Entities */,
 				7EB0C43728CE1DEC0001BBFA /* Translator */,
 				7EB0C3AE28CE18A80001BBFA /* DataSource */,
@@ -188,6 +224,22 @@
 				7EB1F0AD28BB61EB005AA6C2 /* Center.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		7EB0C44028CE36060001BBFA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0C44128CE36060001BBFA /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7EB0C44828CE43030001BBFA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0C44928CE430E0001BBFA /* VaccinationCenterMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		7ED84F8328B713FA00FA167A /* Domain */ = {
@@ -298,21 +350,12 @@
 		8B760AD4C18FE64C141773A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */,
-				299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */,
-				30E0B66CF7316DDAEF6E884D /* Pods-Tests.debug.xcconfig */,
-				ACD0498CD66CEDCD6A2FBB95 /* Pods-Tests.release.xcconfig */,
+				91DB9C2FD27C24A592922FE3 /* Pods-COVID-19-vaccination-center.debug.xcconfig */,
+				8497E6F5CCDEC6BFD72E708F /* Pods-COVID-19-vaccination-center.release.xcconfig */,
+				77FFB81EA4B861297CF0AC7E /* Pods-Tests.debug.xcconfig */,
+				45E3717FDC48937643DAC7BB /* Pods-Tests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B43ED782638DA328D7511CD5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06C74879F9144457AFF91A6F /* Pods_COVID_19_vaccination_center.framework */,
-				8CEB1AF2192D7E9B02E203DE /* Pods_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,11 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EAF21CD28B5DD4300E6D93B /* Build configuration list for PBXNativeTarget "COVID-19-vaccination-center" */;
 			buildPhases = (
-				D4C23362BB54EE2314A62755 /* [CP] Check Pods Manifest.lock */,
+				6B2673B79748BFC12E8047AB /* [CP] Check Pods Manifest.lock */,
 				7EAF21B528B5DD4200E6D93B /* Sources */,
 				7EAF21B628B5DD4200E6D93B /* Frameworks */,
 				7EAF21B728B5DD4200E6D93B /* Resources */,
-				3F154546E3DDC04BDFC451B4 /* [CP] Embed Pods Frameworks */,
+				D637C97E31E2D37662A2FA91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +379,26 @@
 			productName = "COVID-19-vaccination-center";
 			productReference = 7EAF21B928B5DD4200E6D93B /* COVID-19-vaccination-center.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7EB0C43E28CE36060001BBFA /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB0C44528CE36060001BBFA /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				535EBA8C499F0F4276F8D6BB /* [CP] Check Pods Manifest.lock */,
+				7EB0C43B28CE36060001BBFA /* Sources */,
+				7EB0C43C28CE36060001BBFA /* Frameworks */,
+				7EB0C43D28CE36060001BBFA /* Resources */,
+				65FD2206008E9653C2318D49 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EB0C44428CE36060001BBFA /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 7EB0C43F28CE36060001BBFA /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -349,6 +412,10 @@
 				TargetAttributes = {
 					7EAF21B828B5DD4200E6D93B = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					7EB0C43E28CE36060001BBFA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7EAF21B828B5DD4200E6D93B;
 					};
 				};
 			};
@@ -366,6 +433,7 @@
 			projectRoot = "";
 			targets = (
 				7EAF21B828B5DD4200E6D93B /* COVID-19-vaccination-center */,
+				7EB0C43E28CE36060001BBFA /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,27 +448,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EB0C43D28CE36060001BBFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F154546E3DDC04BDFC451B4 /* [CP] Embed Pods Frameworks */ = {
+		535EBA8C499F0F4276F8D6BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4C23362BB54EE2314A62755 /* [CP] Check Pods Manifest.lock */ = {
+		65FD2206008E9653C2318D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2673B79748BFC12E8047AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,6 +517,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D637C97E31E2D37662A2FA91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID-19-vaccination-center/Pods-COVID-19-vaccination-center-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -443,6 +557,7 @@
 				7ED84FB828B8FE3A00FA167A /* CenterListDTO.swift in Sources */,
 				7ED84FB428B8FBFC00FA167A /* Namespace.swift in Sources */,
 				7EB0C3B528CE1B9C0001BBFA /* CenterDTO.swift in Sources */,
+				7EB0C44A28CE430E0001BBFA /* VaccinationCenterMock.swift in Sources */,
 				7ED84F8228B7136900FA167A /* APIClient.swift in Sources */,
 				7ED84FC828BB537700FA167A /* HTTPMethod.swift in Sources */,
 				7ED84F8528B7141100FA167A /* VaccinationCenter.swift in Sources */,
@@ -450,7 +565,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EB0C43B28CE36060001BBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB0C44228CE36060001BBFA /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EB0C44428CE36060001BBFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAF21B828B5DD4200E6D93B /* COVID-19-vaccination-center */;
+			targetProxy = 7EB0C44328CE36060001BBFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7EAF21C728B5DD4300E6D93B /* LaunchScreen.storyboard */ = {
@@ -580,7 +711,7 @@
 		};
 		7EAF21CE28B5DD4300E6D93B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C87F53F3615BAEDFCD0B9160 /* Pods-COVID-19-vaccination-center.debug.xcconfig */;
+			baseConfigurationReference = 91DB9C2FD27C24A592922FE3 /* Pods-COVID-19-vaccination-center.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,7 +741,7 @@
 		};
 		7EAF21CF28B5DD4300E6D93B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 299843FB9ABCD180213EF5F7 /* Pods-COVID-19-vaccination-center.release.xcconfig */;
+			baseConfigurationReference = 8497E6F5CCDEC6BFD72E708F /* Pods-COVID-19-vaccination-center.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -638,6 +769,42 @@
 			};
 			name = Release;
 		};
+		7EB0C44628CE36060001BBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FFB81EA4B861297CF0AC7E /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COVID-19-vaccination-center.app/COVID-19-vaccination-center";
+			};
+			name = Debug;
+		};
+		7EB0C44728CE36060001BBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E3717FDC48937643DAC7BB /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COVID-19-vaccination-center.app/COVID-19-vaccination-center";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -655,6 +822,15 @@
 			buildConfigurations = (
 				7EAF21CE28B5DD4300E6D93B /* Debug */,
 				7EAF21CF28B5DD4300E6D93B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB0C44528CE36060001BBFA /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB0C44628CE36060001BBFA /* Debug */,
+				7EB0C44728CE36060001BBFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
