@@ -1,4 +1,22 @@
 # COVID-19 Vaccination Center
+
+  <p>
+    <img src="./GithubResources/1.png" width="230px" height="220px" title="Github_Logo"/>
+    <img src="./GithubResources/2.png" width="230px" height="220px" title="Github_Logo"/>
+    <img src="./GithubResources/3.png" width="230px" height="220px" title="Github_Logo"/>
+  </p>
+
+  ## Requirements
+  - 라이브러리는 필수 라이브러리 제외하고 자유롭게 사용 가능
+  - 필수 라이브러리: Snapkit, MapKit, RxSwift, RxCocoa
+  - 디자인패턴: MVVM
+  - 제공된 API를 사용하여 JSON 데이터를 요청 후 리스트 형식으로 출력
+  - 하단으로 스크롤시 자동으로 다음페이지 요청 (페이지당 10개씩) ”updateAt”를 기준으로 내림차순 리스트 정렬
+  - 생성된 리스트에서 하나의 아이템을 선택하면 디테일 화면으로 이동 디테일 화면에서는 선택한 아이템의 정보를 출력
+  - 지도에서는 현재 위치 오버레이와 접종센터 마커를 노출
+
+---
+
   ## Useage
   ```
   $ pod install && xed .
