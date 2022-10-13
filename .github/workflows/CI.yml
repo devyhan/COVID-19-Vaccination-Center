@@ -1,0 +1,29 @@
+name: CI
+
+on: 
+ - push
+
+jobs:
+  ci:
+    runs-on: macos-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cache dependencies 
+        id: cache
+        uses: actions/cache@v3
+        with:
+          # cache대상의 path를 지정합니다.
+          path: '**/Pods'
+          # cache의 무효화를 결정하는 기준은 의존성이 변경되면 함께 변경되는 파일인 Podfile.lock을 기준으로 합니다.
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          # key가 유효하지 않은경우
+          restore-keys: |
+            ${{ runner.os }}-pods-
+
+      - name: Install dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: pod install 
+
+#
